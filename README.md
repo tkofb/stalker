@@ -1,2 +1,2 @@
 # stalker
-stock watchlist
+portfolio analyzer
