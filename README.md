@@ -28,21 +28,28 @@ cd stalker
 ```
 
 ## usage
-run the app
-  1. ```bash
+1. run the app  
+    ```bash
     streamlit run main.py
     ```
-  2. upload your csv file
-  3. select date and return columns
-  4. choose a time period to analyze
-  5. view calculated metrics and win/loss pie chart
+2. upload your csv file  
+3. select date and return columns  
+4. choose a time period to analyze  
+5. view calculated metrics and win/loss pie chart  
+
+  
 
 ## example
+### example csv
 ```csv
 Date,Returns
 2024-01-01,0.002
 2024-01-02,-0.001
 ```
+### example view (simulated data)
+![Landing Page](/stalker_img1.png)
+![Metrics](/stalker_img2.png)
+
 ## outputs include
   - total return
   - annualized return
