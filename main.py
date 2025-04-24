@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-st.title("Portfolio Analyzer")
+st.title("stalker")
 
 uploaded_file = st.file_uploader("Upload files", type='csv', label_visibility="collapsed")
 dates, returns = None, None
@@ -22,9 +22,9 @@ if uploaded_file:
 
     col1, col2 = st.columns(2)
     with col1:
-        start = st.date_input('From:')
+        start = st.date_input('From:', value=df.loc[0, 'Date'])
     with col2:
-        end = st.date_input('To:')
+        end = st.date_input('To:', value='today')
 
     if dates and returns:
         df[dates] = pd.to_datetime(df[dates]).dt.date
